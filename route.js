@@ -10,14 +10,8 @@ const users = [{
 },
 ];
 
-const pool = require('../config/config');
 
 const route = app =>{
-    // app.get('/', (request, response) => {
-    //     response.send({
-    //         message: 'Node.js and Express REST API'
-    //     });
-    // });
 
     app.get('/users',(req, res)=>{
         res.send(users);
