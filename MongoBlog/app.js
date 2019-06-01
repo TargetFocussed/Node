@@ -1,4 +1,4 @@
-//const mongo =require('./demo');
+
 const mongo = require('mongodb').MongoClient;
 
 const route = app=>{
@@ -41,11 +41,11 @@ const route = app=>{
             });
 
     app.post("/post",(req,res)=>{
-            const blog ={
-                id : req.params.id,
-                Name : req.params.name,
-                Comments: req.params.Comments
-            }
+//             const blog ={
+//                 id : req.params.id,
+//                 Name : req.params.name,
+//                 Comments: req.params.Comments
+//             }
             console.log(blog);
             
             mongo.connect("mongodb://localhost:27017/test", (err, db)=>{
